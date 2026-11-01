@@ -1,0 +1,24 @@
+{"question": "What voltage should a lithium pack be stored at if it won't be flown for a few days?", "relevant_docs": ["battery-care"], "answer_keywords": ["3.8"]}
+{"question": "When is it okay to fast charge a battery at 2C?", "relevant_docs": ["battery-care"], "answer_keywords": ["field lead"]}
+{"question": "How much capacity loss means a battery pack should be retired?", "relevant_docs": ["battery-care"], "answer_keywords": ["20"]}
+{"question": "What is the wind speed limit for flying?", "relevant_docs": ["flight-safety"], "answer_keywords": ["10"]}
+{"question": "How high are we allowed to fly?", "relevant_docs": ["flight-safety"], "answer_keywords": ["120"]}
+{"question": "How many GPS satellites are needed before takeoff?", "relevant_docs": ["flight-safety"], "answer_keywords": ["12"]}
+{"question": "How often do propellers get replaced?", "relevant_docs": ["maintenance-schedule"], "answer_keywords": ["25"]}
+{"question": "What happens to a drone after a crash landing?", "relevant_docs": ["maintenance-schedule"], "answer_keywords": ["grounded"]}
+{"question": "When does the IMU need recalibration?", "relevant_docs": ["maintenance-schedule"], "answer_keywords": ["100"]}
+{"question": "How quickly must a written incident report be filed?", "relevant_docs": ["incident-reporting"], "answer_keywords": ["24"]}
+{"question": "What should I record if the aircraft flies away?", "relevant_docs": ["incident-reporting"], "answer_keywords": ["gps"]}
+{"question": "How long do we keep raw survey imagery?", "relevant_docs": ["data-retention"], "answer_keywords": ["90"]}
+{"question": "Can I copy customer imagery to my personal Google Drive?", "relevant_docs": ["data-retention"], "answer_keywords": ["prohibited"]}
+{"question": "Why are flight logs retained for five years?", "relevant_docs": ["data-retention"], "answer_keywords": ["regulators"]}
+{"question": "What is the hotel limit per night in a metro city?", "relevant_docs": ["travel-reimbursement"], "answer_keywords": ["4,000"]}
+{"question": "What is the deadline for submitting an expense claim?", "relevant_docs": ["travel-reimbursement"], "answer_keywords": ["15"]}
+{"question": "How many simulator hours does a new engineer need before flying?", "relevant_docs": ["onboarding"], "answer_keywords": ["10"]}
+{"question": "Which radio channel is reserved for emergencies?", "relevant_docs": ["communications"], "answer_keywords": ["9"]}
+{"question": "Is public wifi allowed on the field laptop?", "relevant_docs": ["communications"], "answer_keywords": ["vpn"]}
+{"question": "What is the storage voltage for batteries, and how often are propellers replaced?", "relevant_docs": ["battery-care", "maintenance-schedule"], "answer_keywords": ["3.8", "25"]}
+{"question": "After a crash, who do I notify and what happens to the aircraft?", "relevant_docs": ["incident-reporting", "maintenance-schedule"], "answer_keywords": ["field lead", "inspection"]}
+{"question": "Which courses do new hires take in their first week, and what is the battery charge rate they will learn?", "relevant_docs": ["onboarding", "battery-care"], "answer_keywords": ["1c"]}
+{"question": "What is the company's parental leave policy?", "relevant_docs": [], "answer_keywords": []}
+{"question": "Which drone model does the fleet use for thermal inspections?", "relevant_docs": [], "answer_keywords": []}

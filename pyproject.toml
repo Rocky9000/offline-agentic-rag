@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-agentic-rag"
+version = "0.1.0"
+description = "Multi-agent retrieval-augmented generation that runs fully offline on local LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Rakesh Vamshi Pullagura" }]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
+neural = ["sentence-transformers>=2.7"]
+pdf = ["pypdf>=4.0"]
+dev = ["pytest>=8", "httpx>=0.27", "fastapi>=0.110", "ruff>=0.5"]
+
+[project.scripts]
+agentrag = "agentrag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+# Newer Starlette releases warn that the test client is moving from httpx to httpx2.
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient`"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Prompt templates and the inline HTML UI are long string literals by nature.
+"src/agentrag/api.py" = ["E501"]
+"src/agentrag/agents.py" = ["E501"]
