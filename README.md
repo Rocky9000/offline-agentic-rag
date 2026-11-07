@@ -73,7 +73,7 @@ agentrag eval eval/handbook_qa.jsonl --k 3 --e2e    # full pipeline with your lo
 | Chunk size | BM25 | Dense (hashing) | **Hybrid (RRF)** |
 |---|---|---|---|
 | 800 chars (1 chunk per doc) | 0.955 / 0.955 | 0.909 / 0.909 | 0.909 / 0.909 |
-| 200 chars (38 chunks) | 0.909 / 0.909 | 0.955 / 0.955 | **1.000 / 1.000** |
+| 200 chars (54 chunks) | 0.909 / 0.909 | 0.955 / 0.955 | **1.000 / 1.000** |
 
 What this shows: with coarse chunks the task is easy and BM25 alone is enough. With fine-grained chunks, where each passage holds one or two facts, neither retriever is reliable on its own, and fusing them gets every question right at rank 1. The corpus is small, so treat this as a sanity check on the method, not a leaderboard number. A neural embedder is the obvious next experiment.
 
